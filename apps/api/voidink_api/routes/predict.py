@@ -6,6 +6,7 @@ from pathlib import Path
 
 from fastapi import APIRouter, HTTPException
 
+ML_ROOT = Path("/app/ml")
 # Add ml package to path
 Path("/app/ml")
 Path("/app/models")
