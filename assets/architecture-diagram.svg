@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" fill="none">
+  <rect width="900" height="420" fill="#1a1614"/>
+  <text x="450" y="36" text-anchor="middle" fill="#c4b8a8" font-family="monospace" font-size="20">voidink architecture</text>
+
+  <!-- Data Sources -->
+  <rect x="30" y="70" width="140" height="80" rx="4" fill="#2a2420" stroke="#4a4038"/>
+  <text x="100" y="100" text-anchor="middle" fill="#8a8078" font-family="monospace" font-size="11">Data Sources</text>
+  <text x="100" y="118" text-anchor="middle" fill="#c4b8a8" font-family="monospace" font-size="10">Steam · Reddit</text>
+  <text x="100" y="134" text-anchor="middle" fill="#c4b8a8" font-family="monospace" font-size="10">Kaggle · Web</text>
+
+  <!-- ML Pipeline -->
+  <rect x="220" y="70" width="160" height="80" rx="4" fill="#2a2420" stroke="#4a4038"/>
+  <text x="300" y="100" text-anchor="middle" fill="#8a8078" font-family="monospace" font-size="11">ML Pipeline</text>
+  <text x="300" y="118" text-anchor="middle" fill="#c4b8a8" font-family="monospace" font-size="10">clean · label</text>
+  <text x="300" y="134" text-anchor="middle" fill="#c4b8a8" font-family="monospace" font-size="10">train · evaluate</text>
+
+  <!-- Models -->
+  <rect x="430" y="70" width="140" height="80" rx="4" fill="#2a2420" stroke="#8b3a2f"/>
+  <text x="500" y="100" text-anchor="middle" fill="#8a8078" font-family="monospace" font-size="11">Models</text>
+  <text x="500" y="118" text-anchor="middle" fill="#c4b8a8" font-family="monospace" font-size="10">TF-IDF+LR</text>
+  <text x="500" y="134" text-anchor="middle" fill="#c4b8a8" font-family="monospace" font-size="10">DistilBERT</text>
+
+  <!-- API -->
+  <rect x="280" y="220" width="160" height="70" rx="4" fill="#342e28" stroke="#8b3a2f"/>
+  <text x="360" y="250" text-anchor="middle" fill="#8a8078" font-family="monospace" font-size="11">FastAPI</text>
+  <text x="360" y="268" text-anchor="middle" fill="#c4b8a8" font-family="monospace" font-size="10">/v1/predict</text>
+
+  <!-- Web -->
+  <rect x="500" y="220" width="160" height="70" rx="4" fill="#342e28" stroke="#4a5d4a"/>
+  <text x="580" y="250" text-anchor="middle" fill="#8a8078" font-family="monospace" font-size="11">Next.js</text>
+  <text x="580" y="268" text-anchor="middle" fill="#c4b8a8" font-family="monospace" font-size="10">Vercel deploy</text>
+
+  <!-- Arrows -->
+  <line x1="170" y1="110" x2="218" y2="110" stroke="#8b3a2f" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="380" y1="110" x2="428" y2="110" stroke="#8b3a2f" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="500" y1="150" x2="400" y2="218" stroke="#8b3a2f" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="440" y1="255" x2="498" y2="255" stroke="#4a5d4a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Emotions output -->
+  <rect x="650" y="200" width="200" height="110" rx="4" fill="#2a2420" stroke="#4a4038"/>
+  <text x="750" y="230" text-anchor="middle" fill="#8a8078" font-family="monospace" font-size="11">12 Emotions</text>
+  <text x="750" y="252" text-anchor="middle" fill="#c4b8a8" font-family="monospace" font-size="9">fear · dread · sadness</text>
+  <text x="750" y="268" text-anchor="middle" fill="#c4b8a8" font-family="monospace" font-size="9">nostalgia · loneliness</text>
+  <text x="750" y="284" text-anchor="middle" fill="#c4b8a8" font-family="monospace" font-size="9">+ 7 more · probabilities</text>
+  <line x1="660" y1="255" x2="648" y2="255" stroke="#8b3a2f" stroke-width="2"/>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6" fill="#8b3a2f"/>
+    </marker>
+  </defs>
+</svg>

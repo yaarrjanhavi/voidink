@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink-black: #1a1614;
+  --paper-aged: #2a2420;
+  --paper-fiber: #342e28;
+  --text-faded: #c4b8a8;
+  --text-ghost: #8a8078;
+  --accent-rust: #8b3a2f;
+  --accent-mold: #4a5d4a;
+  --accent-blood-dry: #6b2d3c;
+  --grain-opacity: 0.08;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--ink-black);
+  color: var(--text-faded);
+  font-family: 'Courier Prime', 'IBM Plex Mono', monospace;
+}
+
+::selection {
+  background: var(--accent-blood-dry);
+  color: var(--text-faded);
+}
+
+@layer components {
+  .paper-card {
+    @apply relative rounded-sm border border-[#4a4038] bg-[var(--paper-aged)] p-6 shadow-lg;
+    transform: rotate(-0.2deg);
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.3), 2px 3px 12px rgba(0, 0, 0, 0.5);
+  }
+
+  .paper-card:nth-child(even) {
+    transform: rotate(0.15deg);
+  }
+
+  .typewriter-title {
+    font-family: 'Special Elite', 'Courier Prime', monospace;
+    letter-spacing: 0.04em;
+  }
+
+  .ink-button {
+    @apply relative overflow-hidden border border-[#5c4a42] bg-[var(--paper-fiber)] px-5 py-2.5 text-sm uppercase tracking-widest text-[var(--text-faded)] transition-all duration-300;
+    font-family: 'Special Elite', monospace;
+  }
+
+  .ink-button:hover {
+    @apply border-[var(--accent-rust)] text-white;
+    box-shadow: 0 0 20px rgba(139, 58, 47, 0.3);
+  }
+
+  .ink-button:disabled {
+    @apply cursor-not-allowed opacity-40;
+  }
+
+  .notebook-input {
+    @apply w-full resize-y border border-[#4a4038] bg-[#1f1b18] p-4 text-[var(--text-faded)] outline-none transition-colors;
+    min-height: 140px;
+    font-family: 'Courier Prime', monospace;
+  }
+
+  .notebook-input:focus {
+    @apply border-[var(--accent-rust)];
+    box-shadow: 0 0 0 1px rgba(139, 58, 47, 0.2);
+  }
+
+  .emotion-bar-track {
+    @apply h-2 w-full overflow-hidden rounded-sm bg-[#1a1614];
+  }
+
+  .emotion-bar-fill {
+    @apply h-full transition-all duration-700 ease-out;
+    background: linear-gradient(90deg, var(--bar-color, #8b3a2f), transparent);
+  }
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-2%, -3%); }
+  30% { transform: translate(1%, 2%); }
+  50% { transform: translate(-1%, 1%); }
+  70% { transform: translate(2%, -1%); }
+  90% { transform: translate(-2%, 2%); }
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  92% { opacity: 0.95; }
+  94% { opacity: 1; }
+  96% { opacity: 0.92; }
+}
+
+.animate-flicker {
+  animation: flicker 8s infinite;
+}
+
+.animate-grain {
+  animation: grain 0.5s steps(6) infinite;
+}

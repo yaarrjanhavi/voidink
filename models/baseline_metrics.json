@@ -1,0 +1,228 @@
+{
+  "micro_f1": 0.11764705882352941,
+  "macro_f1": 0.075,
+  "micro_precision": 0.06666666666666667,
+  "micro_recall": 0.5,
+  "hamming_loss": 0.625,
+  "subset_accuracy": 0.0,
+  "per_label": {
+    "fear": {
+      "precision": 0.25,
+      "recall": 1.0,
+      "f1-score": 0.4,
+      "support": 1.0
+    },
+    "anxiety": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "dread": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "sadness": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "nostalgia": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "comfort": {
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1-score": 0.5,
+      "support": 1.0
+    },
+    "loneliness": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "curiosity": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "disgust": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "hope": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "melancholy": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "confusion": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "micro avg": {
+      "precision": 0.06666666666666667,
+      "recall": 0.5,
+      "f1-score": 0.11764705882352941,
+      "support": 4.0
+    },
+    "macro avg": {
+      "precision": 0.048611111111111105,
+      "recall": 0.16666666666666666,
+      "f1-score": 0.075,
+      "support": 4.0
+    },
+    "weighted avg": {
+      "precision": 0.14583333333333331,
+      "recall": 0.5,
+      "f1-score": 0.225,
+      "support": 4.0
+    },
+    "samples avg": {
+      "precision": 0.0625,
+      "recall": 0.25,
+      "f1-score": 0.1,
+      "support": 4.0
+    }
+  },
+  "confusion_matrices": {
+    "fear": [
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "anxiety": [
+      [
+        3,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "dread": [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "sadness": [
+      [
+        2,
+        2
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "nostalgia": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "comfort": [
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "loneliness": [
+      [
+        2,
+        2
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "curiosity": [
+      [
+        2,
+        2
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "disgust": [
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "hope": [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "melancholy": [
+      [
+        2,
+        2
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "confusion": [
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  }
+}

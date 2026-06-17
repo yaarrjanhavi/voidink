@@ -1,0 +1,74 @@
+emotions:
+  - id: fear
+    label: Fear
+    color: "#8B2635"
+    description: "Immediate fright, jump-scare reactions"
+    keywords: ["scared", "terrified", "frightening", "jump scare", "horror", "nightmare"]
+  - id: anxiety
+    label: Anxiety
+    color: "#5C4B51"
+    description: "Unease, tension, nervous anticipation"
+    keywords: ["anxious", "uneasy", "tense", "on edge", "paranoid", "stress"]
+  - id: dread
+    label: Dread
+    color: "#2D1B2E"
+    description: "Slow-building existential horror"
+    keywords: ["dread", "doom", "impending", "unsettling", "foreboding", "ominous"]
+  - id: sadness
+    label: Sadness
+    color: "#4A6670"
+    description: "Grief, sorrow, emotional pain"
+    keywords: ["sad", "cry", "tears", "heartbreaking", "tragic", "loss"]
+  - id: nostalgia
+    label: Nostalgia
+    color: "#7A6C5D"
+    description: "Bittersweet memories, childhood echoes"
+    keywords: ["nostalgic", "childhood", "memories", "remember", "retro", "past"]
+  - id: comfort
+    label: Comfort
+    color: "#6B7F6B"
+    description: "Warmth amid darkness, safe spaces"
+    keywords: ["comfort", "cozy", "wholesome", "heartwarming", "cute", "warm"]
+  - id: loneliness
+    label: Loneliness
+    color: "#3D405B"
+    description: "Isolation, emptiness, being alone"
+    keywords: ["lonely", "alone", "isolated", "empty", "abandoned", "solitude"]
+  - id: curiosity
+    label: Curiosity
+    color: "#8B7E74"
+    description: "Mystery, wanting to uncover secrets"
+    keywords: ["curious", "mystery", "intriguing", "secrets", "discover", "puzzle"]
+  - id: disgust
+    label: Disgust
+    color: "#556B2F"
+    description: "Revulsion, body horror, grotesque"
+    keywords: ["disgusting", "gross", "revolting", "body horror", "vile", "nauseating"]
+  - id: hope
+    label: Hope
+    color: "#9CAF88"
+    description: "Light in darkness, possibility of healing"
+    keywords: ["hope", "optimistic", "redemption", "healing", "better", "light"]
+  - id: melancholy
+    label: Melancholy
+    color: "#5D5A6D"
+    description: "Wistful sadness, beautiful sorrow"
+    keywords: ["melancholy", "melancholic", "wistful", "somber", "bittersweet", "longing"]
+  - id: confusion
+    label: Confusion
+    color: "#6E6A6F"
+    description: "Disorientation, unreliable reality"
+    keywords: ["confused", "weird", "surreal", "what", "bizarre", "mind-bending"]
+
+model:
+  baseline:
+    max_features: 50000
+    ngram_range: [1, 2]
+    C: 1.0
+  transformer:
+    model_name: "distilbert-base-uncased"
+    max_length: 256
+    batch_size: 16
+    learning_rate: 2.0e-5
+    epochs: 3
+    threshold: 0.35

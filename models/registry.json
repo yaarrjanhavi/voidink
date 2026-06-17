@@ -1,0 +1,18 @@
+{
+  "registry_version": "0.1.0",
+  "models": [
+    {
+      "id": "heuristic-v1",
+      "type": "keyword",
+      "status": "active",
+      "description": "Keyword-based fallback"
+    },
+    {
+      "id": "tfidf-logreg-v1",
+      "type": "baseline",
+      "artifact": "baseline_lr.pkl",
+      "status": "pending_training",
+      "description": "TF-IDF + One-vs-Rest Logistic Regression"
+    }
+  ]
+}
