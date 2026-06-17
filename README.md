@@ -146,9 +146,8 @@ python ml/voidink_ml/data/collectors/steam.py --app-id 1150690 --game-title OMOR
 
 ## Screenshots
 
-![Screenshot 1](apps/web/public/screenshots/1.png)
-![Screenshot 2](apps/web/public/screenshots/2.png)
-
+![Screenshot 2](apps/web/screenshots/2.png)
+![Screenshot 1](apps/web/screenshots/1.png)
 
 
 ## Future Enhancements
