@@ -21,7 +21,7 @@ export interface BatchPredictResponse {
 export const EMOTIONS = [
   { id: 'fear', label: 'Fear', color: '#8B2635' },
   { id: 'anxiety', label: 'Anxiety', color: '#5C4B51' },
-  { id: 'dread', label: 'Dread', color: '#2D1B2E' },
+  { id: 'dread', label: 'Dread', color: '#c69fc8' },
   { id: 'sadness', label: 'Sadness', color: '#4A6670' },
   { id: 'nostalgia', label: 'Nostalgia', color: '#7A6C5D' },
   { id: 'comfort', label: 'Comfort', color: '#6B7F6B' },

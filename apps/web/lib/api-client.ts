@@ -58,7 +58,7 @@ export function heuristicPredict(text: string) {
   const emotions = Object.entries(keywordMap).map(([id, keywords]) => {
     const hits = keywords.filter((kw) => lower.includes(kw)).length;
     const probability = hits > 0 ? Math.min(0.95, 0.3 + hits * 0.2) : 0.05;
-    const meta = { fear: '#8B2635', anxiety: '#5C4B51', dread: '#ad7faf', sadness: '#4A6670',
+    const meta = { fear: '#8B2635', anxiety: '#5C4B51', dread: '#c69fc8', sadness: '#4A6670',
       nostalgia: '#7A6C5D', comfort: '#6B7F6B', loneliness: '#8b90ba', curiosity: '#8B7E74',
       disgust: '#556B2F', hope: '#9CAF88', melancholy: '#5D5A6D', confusion: '#6E6A6F' } as Record<string, string>;
     const labels: Record<string, string> = {

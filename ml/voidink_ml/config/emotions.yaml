@@ -11,7 +11,7 @@ emotions:
     keywords: ["anxious", "uneasy", "tense", "on edge", "paranoid", "stress"]
   - id: dread
     label: Dread
-    color: "#2D1B2E"
+    color: "#c69fc8"
     description: "Slow-building existential horror"
     keywords: ["dread", "doom", "impending", "unsettling", "foreboding", "ominous"]
   - id: sadness
