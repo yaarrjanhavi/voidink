@@ -4,7 +4,6 @@
 
 Indie horror game reviews → multi-label emotion map. Detects fear, dread, nostalgia, loneliness, and nine other emotions with confidence scores — not just positive/negative sentiment.
 
-![voidink banner](assets/architecture-diagram.svg)
 
 ## Features
 
@@ -147,7 +146,10 @@ python ml/voidink_ml/data/collectors/steam.py --app-id 1150690 --game-title OMOR
 
 ## Screenshots
 
-_Add screenshots to `apps/web/public/screenshots/` after running locally._
+![Screenshot 1](apps/web/public/screenshots/1.png)
+![Screenshot 2](apps/web/public/screenshots/2.png)
+
+
 
 ## Future Enhancements
 
