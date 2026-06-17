@@ -6,7 +6,7 @@ from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-ML_ROOT = Path(__file__).resolve().parents[3] / "ml"
+ML_ROOT = Path("/app/ml")
 if str(ML_ROOT) not in sys.path:
     sys.path.insert(0, str(ML_ROOT))
 
