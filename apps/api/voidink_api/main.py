@@ -2,6 +2,7 @@
 
 import sys
 from pathlib import Path
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -30,7 +31,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Register routers
+app.include_router(health_router)
+app.include_router(predict_router)
+
 
 @app.get("/")
 def root() -> dict:
-    return {"name": "voidink", "docs": "/docs"}
+    return {
+        "name": "voidink",
+        "docs": "/docs",
+        "status": "online",
+    }
