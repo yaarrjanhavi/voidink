@@ -2,7 +2,7 @@
 
 **Read the silence between the lines.**
 
-Indie horror game reviews → multi-label emotion map. Detects fear, dread, nostalgia, loneliness, and nine other emotions with confidence scores — not just positive/negative sentiment.
+Indie horror game reviews → multi-label emotion map. Detects fear, dread, nostalgia, loneliness, and nine other emotions with confidence scores; not just positive/negative sentiment.
 
 
 ## Features
